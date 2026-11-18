@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: 'Working with Ontologies'
+title: Working with Ontologies
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -7,13 +7,13 @@ message: >-
   training material.
 type: dataset
 authors:
-  - family-names: 'Füllenbach'
-    given-names: 'Kathrin'
-    affiliation: 'TDCC-NES, TU Delft'
-  - family-names: 'Metilli'
-    given-names: 'Dani'
-    affiliation: 'TDCC-NES, TU Delft'
-abstract: >-
+  - family-names: Füllenbach
+    given-names: Kathrin
+    affiliation: TDCC-NES, TU Delft
+  - family-names: Metilli
+    given-names: Dani
+    affiliation: TDCC-NES, TU Delft
+abstract: >
   An open training on designing, building and publishing OWL
   ontologies for researchers, built with The Carpentries
   Workbench. Developed by the TDCC-NES Ontology Engineers for
@@ -29,13 +29,13 @@ keywords:
   - SPARQL
 preferred-citation:
   type: article
-  title: 'Working with Ontologies'
+  title: Working with Ontologies
   authors:
-    - family-names: 'Füllenbach'
-      given-names: 'Kathrin'
-      affiliation: 'TDCC-NES, TU Delft'
-    - family-names: 'Metilli'
-      given-names: 'Dani'
-      affiliation: 'TDCC-NES, TU Delft'
+    - family-names: Füllenbach
+      given-names: Kathrin
+      affiliation: TDCC-NES, TU Delft
+    - family-names: Metilli
+      given-names: Dani
+      affiliation: TDCC-NES, TU Delft
   url: 'https://tdcc-nes.github.io/ontology-training-carpentries/'
 
