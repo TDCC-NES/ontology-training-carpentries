@@ -151,6 +151,24 @@ In **Individuals by class**, select `def:Bicycle` and then `id:B001` in the indi
 
 The results should include `id:B001`: we recorded it as a Bicycle, and Bicycle is a subclass of Vehicle. The reasoner therefore infers that B001 is also a Vehicle. See the [DL Query documentation](https://protegewiki.stanford.edu/wiki/DLQueryTab).
 
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Predict a query result
+
+Before running it, predict: if you run **DL Query** for `def:Component`, with **Instances** selected, will `id:B001` appear in the results? Will `id:F001`?
+
+:::::::::::::::::::::::: solution
+
+`id:F001` appears; `id:B001` does not.
+
+F001 is a Frame, and Frame is a subclass of Component, so the reasoner infers that F001 is a Component. B001 is a Bicycle, not a Frame or any other kind of Component, so it does not belong to Component.
+
+Run the query yourself to check your prediction.
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Visualise your ontology {#visualise-ontology}
 
 A visual view helps you compare the implemented ontology with your sketch. Choose a view suited to what you want to inspect:
