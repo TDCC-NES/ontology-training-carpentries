@@ -21,7 +21,7 @@ carpentry: 'dc'
 title: 'Working with Ontologies'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 2026-11-17 # FIXME
+created: 2026-11-17
 
 # Comma-separated list of keywords for the lesson
 keywords: 'Ontology, Linked Data, OWL, RDF, SPARQL'
@@ -66,17 +66,35 @@ contact: 'nes@tdcc.nl'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.md
+episodes:
+- introduction-to-ontologies.md
+- linked-data-foundations.md
+- design-your-own-ontology.md
+- build-your-ontology-in-owl.md
+- logical-modelling-in-owl.md
+- define-classes-logically.md
+- property-characteristics-and-identity.md
+- check-your-ontology-with-reasoning.md
+- advanced-owl-modelling.md
+- owl-2-cheat-sheet.md
+- use-and-evaluate-your-ontology.md
+- publish-your-ontology.md
+- maintain-your-ontology.md
+- reuse-ontologies.md
+- ontologies-beyond-rdf.md
 
 # Information for Learners
-learners: 
+learners:
+- setup.md
+- reference.md
 
 # Information for Instructors
-instructors: 
+instructors:
+- instructor-notes.md
 
 # Learner Profiles
-profiles: 
+profiles:
+- learner-profiles.md
 
 # Customisation ---------------------------------------------
 #

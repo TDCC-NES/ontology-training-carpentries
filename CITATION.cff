@@ -1,11 +1,5 @@
-# This template CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to replace its contents
-# with information about your lesson.
-# Remember to update this file periodically, 
-# ensuring that the author list and other fields remain accurate.
-
 cff-version: 1.2.0
-title: FIXME
+title: 'Working with Ontologies'
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +7,35 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - family-names: 'Füllenbach'
+    given-names: 'Kathrin'
+    affiliation: 'TDCC-NES, TU Delft'
+  - family-names: 'Metilli'
+    given-names: 'Dani'
+    affiliation: 'TDCC-NES, TU Delft'
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  An open training on designing, building and publishing OWL
+  ontologies for researchers, built with The Carpentries
+  Workbench. Developed by the TDCC-NES Ontology Engineers for
+  the Dutch Natural & Engineering Sciences research community.
+url: 'https://tdcc-nes.github.io/ontology-training-carpentries/'
+repository-code: 'https://github.com/TDCC-NES/ontology-training-carpentries'
 license: CC-BY-4.0
+keywords:
+  - Ontology
+  - Linked Data
+  - OWL
+  - RDF
+  - SPARQL
+preferred-citation:
+  type: book
+  title: 'Working with Ontologies'
+  authors:
+    - family-names: 'Füllenbach'
+      given-names: 'Kathrin'
+      affiliation: 'TDCC-NES, TU Delft'
+    - family-names: 'Metilli'
+      given-names: 'Dani'
+      affiliation: 'TDCC-NES, TU Delft'
+  url: 'https://tdcc-nes.github.io/ontology-training-carpentries/'
+
