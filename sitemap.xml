@@ -13,6 +13,9 @@
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/advanced-owl-modelling.html</loc>
   </url>
   <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/aio.html</loc>
+  </url>
+  <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/build-your-ontology-in-owl.html</loc>
   </url>
   <url>
@@ -26,6 +29,9 @@
   </url>
   <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/design-your-own-ontology.html</loc>
+  </url>
+  <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/images.html</loc>
   </url>
   <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/index.html</loc>
@@ -43,6 +49,9 @@
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/advanced-owl-modelling.html</loc>
   </url>
   <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/build-your-ontology-in-owl.html</loc>
   </url>
   <url>
@@ -58,10 +67,19 @@
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/design-your-own-ontology.html</loc>
   </url>
   <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/introduction-to-ontologies.html</loc>
+  </url>
+  <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/linked-data-foundations.html</loc>
@@ -97,7 +115,13 @@
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor/use-and-evaluate-your-ontology.html</loc>
   </url>
   <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/introduction-to-ontologies.html</loc>
+  </url>
+  <url>
+    <loc>https://TDCC-NES.github.io/ontology-training-carpentries/key-points.html</loc>
   </url>
   <url>
     <loc>https://TDCC-NES.github.io/ontology-training-carpentries/linked-data-foundations.html</loc>
