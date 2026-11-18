@@ -1,0 +1,63 @@
+@prefix def: <https://w3id.org/bicycle-ontology/def/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Focused definitions for the logical modelling chapter.
+# Keep bicycle-inventory.ttl and catalog-v001.xml beside this file;
+# the catalog resolves its import of the separate inventory records.
+# Uses the bicycle ontology's class, property and individual IRIs.
+
+<https://w3id.org/bicycle-ontology/reasoning> a owl:Ontology ;
+    rdfs:label "Bicycle frame-material reasoning example"@en ;
+    rdfs:comment "Classifies bicycles with a frame whose material value is steel in English. Classification uses the exact text value and language tag."@en ;
+    owl:imports <https://w3id.org/bicycle-ontology/inventory/> .
+
+def:Vehicle a owl:Class .
+
+def:Bicycle a owl:Class ;
+    rdfs:subClassOf def:Vehicle .
+
+def:Component a owl:Class .
+
+def:Frame a owl:Class ;
+    rdfs:subClassOf def:Component .
+
+def:hasComponent a owl:ObjectProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range def:Component .
+
+# Material values use language-tagged text, as in the building walkthrough.
+def:hasMaterial a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdf:langString .
+
+# The imported inventory also records colour values.
+def:hasColour a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdf:langString .
+
+def:SteelFrame a owl:Class ;
+    rdfs:label "frame with material value steel"@en ;
+    owl:equivalentClass [ a owl:Class ;
+        owl:intersectionOf (
+            def:Frame
+            [ a owl:Restriction ;
+                owl:onProperty def:hasMaterial ;
+                owl:hasValue "steel"@en ]
+        ) ] .
+
+def:BicycleWithSteelFrame a owl:Class ;
+    rdfs:label "bicycle with a frame whose material value is steel"@en ;
+    owl:equivalentClass [ a owl:Class ;
+        owl:intersectionOf (
+            def:Bicycle
+            [ a owl:Restriction ;
+                owl:onProperty def:hasComponent ;
+                owl:someValuesFrom def:SteelFrame ]
+        ) ] .
+
+# Expected inferences: F001 is a SteelFrame; B001 is a BicycleWithSteelFrame;
+# B001, B002 and B003 are Vehicles. Steel-frame membership and its negation
+# are both unentailed for B002 and B003: additional material/component facts
+# remain possible under the open-world assumption.

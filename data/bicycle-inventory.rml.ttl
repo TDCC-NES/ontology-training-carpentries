@@ -1,0 +1,35 @@
+@prefix def: <https://w3id.org/bicycle-ontology/def/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+
+<https://w3id.org/bicycle-ontology/mapping/Bicycles> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "bicycle-inventory.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    rr:subjectMap [
+        rr:template "https://w3id.org/bicycle-ontology/id/{bicycle_id}" ;
+        rr:class def:Bicycle
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate def:hasComponent ;
+        rr:objectMap [ rr:template "https://w3id.org/bicycle-ontology/id/{frame_id}" ]
+    ], [
+        rr:predicate def:hasColour ;
+        rr:objectMap [ rml:reference "colour" ; rr:language "en" ]
+    ] .
+
+<https://w3id.org/bicycle-ontology/mapping/Frames> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "bicycle-inventory.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    rr:subjectMap [
+        rr:template "https://w3id.org/bicycle-ontology/id/{frame_id}" ;
+        rr:class def:Frame
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate def:hasMaterial ;
+        rr:objectMap [ rml:reference "material" ; rr:language "en" ]
+    ] .
