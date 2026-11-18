@@ -28,7 +28,7 @@ keywords:
   - RDF
   - SPARQL
 preferred-citation:
-  type: book
+  type: article
   title: 'Working with Ontologies'
   authors:
     - family-names: 'Füllenbach'
